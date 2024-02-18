@@ -6,3 +6,16 @@ module.exports = {
     },
     plugins: [],
   }
+  module.exports = {
+    // other configurations...
+  
+    theme: {
+      extend: {
+        spacing: {
+          '550': '550px', 
+        },
+      },
+    },
+    plugins: [],
+  };
+  
