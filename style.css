@@ -19,17 +19,25 @@
     background: #FBFAF9;
     border-radius: 5px;
     position: absolute;
+<<<<<<< HEAD
     top: 0; 
+=======
+    top: 50%;  
+>>>>>>> 8284b106b1c77496e52ef5fa8032029913c2adf6
 
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 0 30px 30px;
     color: #333;
+<<<<<<< HEAD
 }
 .open-popup{
     visibility: visible;
     top: 50%;
+=======
+    /* visibility: hidden; */
+>>>>>>> 8284b106b1c77496e52ef5fa8032029913c2adf6
 }
 button{
     padding: 10px 50px;

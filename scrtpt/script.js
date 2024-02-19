@@ -104,8 +104,35 @@ else{
 
 //Popup function
 
+<<<<<<< HEAD
+=======
+//Popup function
+
+>>>>>>> 8284b106b1c77496e52ef5fa8032029913c2adf6
 function closePopup(){
     document.getElementById("popup");
     console.log("clicked");
 }
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 8284b106b1c77496e52ef5fa8032029913c2adf6
 
