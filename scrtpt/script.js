@@ -10,9 +10,8 @@ function TitcketCalculation(btn){
     const currentSeats = +totalSeatsSelector.innerText; 
     let availableSeats = currentSeats - sub;
     totalSeatsSelector.innerHTML = availableSeats;
-    btn.style.backgroundColor = "red";
-    seatsCount();
-    sumOfTicket();
+    btn.style.backgroundColor = "#1DD100";
+    
 
     const selectedBtn = (btn.id);
     const selectedContainer = document.getElementById("creatingUl");
@@ -34,10 +33,10 @@ function TitcketCalculation(btn){
 
     selectedContainer.appendChild(li);
 
-    
-   
-
+    seatsCount();
+    sumOfTicket();
 }
+
 let sum = 1;
 function seatsCount(){
     //Seats Count:
@@ -86,7 +85,9 @@ else{
 
 })
 
-//Discount Grand total:
+
+
+//Button Color:
 
 
 
