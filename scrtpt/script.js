@@ -10,6 +10,7 @@ function TitcketCalculation(btn){
     const currentSeats = +totalSeatsSelector.innerText; 
     let availableSeats = currentSeats - sub;
     totalSeatsSelector.innerHTML = availableSeats;
+    btn.style.backgroundColor = "red";
     seatsCount();
     sumOfTicket();
 
@@ -45,7 +46,7 @@ function seatsCount(){
     let countingTotalSeats = convertToNumber + sum;
     currentSeats.innerHTML = countingTotalSeats; 
 }
- 
+
 let perTicketPrice = 550;
 //Summation of the ticket Price
 function sumOfTicket(){
@@ -60,27 +61,49 @@ function sumOfTicket(){
     const initialGrandTotal = +GrandTotal.innerText;
     let totalGrandTotal = initialGrandTotal + perTicketPrice;
     GrandTotal.innerHTML = totalGrandTotal;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Summation of Ticket Price
-function summationOfTicketPrice(){
-   const gettingSeatNumber = document.getElementById('seatsNumber');
-   const seatsNumber = gettingSeatNumber.innerText;
+    
    
 }
+
+//Cupupon Matching
+
+const applyBtn = document.getElementById("applyBtn");
+const secrateCupuponCode = ["NEW15", "Couple 20"];
+
+applyBtn.addEventListener("click", function(){
+const new15 = document.getElementById("new15");
+const couple20 = document.getElementById("couple20");
+const inputValue = document.getElementById("inputValue");
+const input = inputValue.value;
+
+if(secrateCupuponCode.includes(input)){
+
+    document.getElementById("inputValue").style.display = "none";
+}
+else{
+    alert("Wrong cupupon!");
+}
+
+})
+
+//Discount Grand total:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
