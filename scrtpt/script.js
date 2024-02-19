@@ -1,7 +1,4 @@
-//Update taka
-//Get the current taka
-//Increase the current taka by 550 Taka
-//Show the updated taka
+
 
 let sub = 1;let selectedSeat = 0;
 function TitcketCalculation(btn){
@@ -102,19 +99,13 @@ else{
 })
 
 
+
 //Popup function
 
-<<<<<<< HEAD
-=======
-//Popup function
-
->>>>>>> 8284b106b1c77496e52ef5fa8032029913c2adf6
 function closePopup(){
     document.getElementById("popup");
     console.log("clicked");
 }
-<<<<<<< HEAD
-=======
 
 
 
@@ -134,5 +125,4 @@ function closePopup(){
 
 
 
->>>>>>> 8284b106b1c77496e52ef5fa8032029913c2adf6
 
