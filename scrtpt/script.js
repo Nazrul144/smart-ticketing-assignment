@@ -53,7 +53,13 @@ function sumOfTicket(){
     const initialTotalValue = +totalTicketPrice.innerText;
     let totalCost = initialTotalValue + perTicketPrice;
     totalTicketPrice.innerHTML = totalCost;
-    console.log(totalCost);
+
+
+    //Updating Grand Total
+    const GrandTotal = document.getElementById("grand-total");
+    const initialGrandTotal = +GrandTotal.innerText;
+    let totalGrandTotal = initialGrandTotal + perTicketPrice;
+    GrandTotal.innerHTML = totalGrandTotal;
 }
 
 
