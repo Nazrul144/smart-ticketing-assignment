@@ -13,6 +13,7 @@ function TitcketCalculation(btn){
     btn.style.backgroundColor = "#1DD100";
     
 
+
     const selectedBtn = (btn.id);
     const selectedContainer = document.getElementById("creatingUl");
 
@@ -75,10 +76,15 @@ const couple20 = document.getElementById("couple20");
 const inputValue = document.getElementById("inputValue");
 const input = inputValue.value;
 
-if(secrateCupuponCode.includes(input)){
+if(input === ""){
+    alert("Provide a Coupon!");
+}
+else if(secrateCupuponCode.includes(input)){
 
     document.getElementById("inputValue").style.display = "none";
+    applyBtn.style.display = "none";
 }
+
 else{
     alert("Wrong cupupon!");
 }
